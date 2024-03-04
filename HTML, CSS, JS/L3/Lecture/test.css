@@ -1,0 +1,21 @@
+main > h3{
+    color: blue;
+    background-color: antiquewhite;
+}
+
+#first_div{
+    background-color: aqua;
+    padding: 8px;
+}
+
+#first_div > div:nth-child(2){
+    background-color: lightyellow;
+}
+
+.card{
+    border: 1px solid red;
+}
+
+.card > p:last-of-type{
+    background-color: green;
+}

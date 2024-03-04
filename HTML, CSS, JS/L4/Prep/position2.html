@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L4</title>
+    <style>
+        *{padding:0; margin:0;box-sizing: border-box;}
+        .hot-update{
+            text-align: center;
+            font-size: 12px;
+            padding: 2px;
+            text-decoration: underline;
+            background-color: rgb(255, 253, 205);
+        }
+        header{
+            position: sticky;
+            top: 0;
+            width: 100vw;
+            *{transition: all 300ms ease-out;}
+            a, img{
+                &:hover{scale: 1.1;}
+                &:active{scale: 0.8;}
+            }
+        }
+        .nav{
+            position: relative;
+            display: flex;
+            padding: 14px calc(100vw - 488px) 14px 12px;
+            background-color: rgb(23, 60, 82);
+            justify-content: space-evenly;
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+                letter-spacing: 2px;
+            }
+        }
+        #profile_icon{
+            width:34px;
+            height:34px;
+            position: absolute;
+            right: 12px;
+            top: 6px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .post{
+            margin: 20px auto;
+            max-width: 500px;
+            background-color:rgb(191, 249, 213);
+            padding: 16px 24px;
+            border-radius: 20px;
+            h2{
+                margin: 10px auto;
+                width: fit-content;
+            }
+            .content{
+                margin: 4px 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hot-update">
+        We need to become stronger every day ! Deadline: 31st March
+    </div>
+    <header>
+        <div class="nav">
+            <a href="#s1">home</a>
+            <a href="#s1">about</a>
+            <a href="#s1">help</a>
+            <a href="#s1">profile</a>
+            <img id="profile_icon" src="https://cdn.vectorstock.com/i/preview-1x/17/61/male-avatar-profile-picture-vector-10211761.jpg">
+        </div>
+        <div></div>
+    </header>
+        <section id="s1" class="post">
+            <h2>Lorem ipsum dolor sit!</h2>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio! Architecto quod dolores expedita veniam non. Repellat quis illum delectus voluptatum dolores inventore, deserunt ullam tenetur enim in necessitatibus ducimus sint facilis nostrum harum ut recusandae pariatur ea. Et voluptatibus ducimus laborum quos voluptates accusantium eum itaque quam molestias iure.
+            </div>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio! Architecto quod dolores expedita veniam non. Repellat quis illum delectus voluptatum dolores inventore, deserunt ullam tenetur enim in necessitatibus ducimus sint facilis nostrum harum ut recusandae pariatur ea. Et voluptatibus ducimus laborum quos voluptates accusantium eum itaque quam molestias iure.
+            </div>
+        </section>
+        <section id="s2" class="post">
+            <h2>Lorem ipsum dolor sit!</h2>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio! Architecto quod dolores expedita veniam non. Repellat quis illum delectus voluptatum dolores inventore, deserunt ullam tenetur enim in necessitatibus ducimus sint facilis nostrum harum ut recusandae pariatur ea. Et voluptatibus ducimus laborum quos voluptates accusantium eum itaque quam molestias iure.
+            </div>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio! Architecto quod dolores expedita veniam non. Repellat quis illum delectus voluptatum dolores inventore, deserunt ullam tenetur enim in necessitatibus ducimus sint facilis nostrum harum ut recusandae pariatur ea. Et voluptatibus ducimus laborum quos voluptates accusantium eum itaque quam molestias iure.
+            </div>
+        </section>
+        <section id="s2" class="post">
+            <h2>Lorem ipsum dolor sit!</h2>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio! Architecto quod dolores expedita veniam non. Repellat quis illum delectus voluptatum dolores inventore, deserunt ullam tenetur enim in necessitatibus ducimus sint facilis nostrum harum ut recusandae pariatur ea. Et voluptatibus ducimus laborum quos voluptates accusantium eum itaque quam molestias iure.
+            </div>
+            <div class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, odio! Architecto quod dolores expedita veniam non. Repellat quis illum delectus voluptatum dolores inventore, deserunt ullam tenetur enim in necessitatibus ducimus sint facilis nostrum harum ut recusandae pariatur ea. Et voluptatibus ducimus laborum quos voluptates accusantium eum itaque quam molestias iure.
+            </div>
+        </section>
+</body>
+</html>

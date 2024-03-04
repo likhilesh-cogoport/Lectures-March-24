@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: #995DB5;
+    padding: 4px;
+    height: 200px;
+    margin: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.child{
+    height:100px;
+    /* flex-basis: 100px; */
+    width: 100px;
+    
+    border: 1px solid yellowgreen;
+    background-color: #F6941E;
+
+    &:nth-of-type(2){
+        align-self: flex-end;
+    }
+}

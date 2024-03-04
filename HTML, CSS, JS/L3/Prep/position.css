@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease-out;
+}
+button{
+    padding: 2px 4px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+
+    &:hover{
+        scale: 1.1;
+    }
+
+    &:active{
+        scale: 0.7;
+    }
+}
+p{
+    color: rgb(41, 39, 39);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px auto 0;
+    width: fit-content;
+}
+h1{
+    font-size: 32px;
+    color: #f66607;
+    margin: 2px auto 0;
+    width: fit-content;
+}
+.parent{
+    position: relative;
+    margin:60px auto;
+    height:400px;
+    width: 600px;
+    background-color: bisque;
+    border: 2px double brown;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.card{
+    height:100%;
+    border: 2px double brown;
+    padding: 4px; 
+    border-radius: 4px;
+}
+
+@media  (1100px >= width >= 800px){
+    .parent{
+        height:300px;
+        width: 450px;
+        background-color: rgb(255, 252, 196);
+    }
+    h1{
+        font-size: 24px;
+        color: #f65307;
+    }
+    p{
+        color: rgb(39, 39, 41);
+        font-size: 10px;
+    }
+}
+
+@media (800px >= width >= 600px){
+    .parent{
+        height:250px;
+        width: 400px;
+        background-color: rgb(196, 255, 233);
+    }
+    h1{
+        font-size: 20px;
+        color: #f65307;
+    }
+    p{
+        color: rgb(39, 39, 41);
+        font-size: 9px;
+    }
+}
+
+@media (600px >= width >= 300px){
+    .parent{
+        height:200px;
+        width: 300px;
+        background-color: rgb(229, 255, 196);
+    }
+    h1{
+        font-size: 16px;
+        color: #f65307;
+    }
+    p{
+        color: rgb(39, 39, 41);
+        font-size: 7px;
+    }
+}

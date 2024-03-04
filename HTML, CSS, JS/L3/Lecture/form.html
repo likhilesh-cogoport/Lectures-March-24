@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Day2</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <form action="./next.html" method="get">
+        <div style="background-color: lightcyan; padding: 12px;">
+            <br><br>
+            <label  class="label-type1" for="f_name">Name:</label>
+            <input id="gaming"   type="text"  name="name"  placeholder="Please enter your name"  required  autocomplete="on" size="30">
+            <br><br>
+            <label class="label-type1" for="f_pass">Password:</label>
+            <input id="f_pass" type="password" name="password" placeholder="Please enter your password" required>
+            <br><br>
+            <label id="change" class="label-type1" for="f_email">Email:</label>
+            <input id="f_email" type="email" name="email" placeholder="Please enter your email" required>
+            <br><br>
+            <label class="label-type1" for="f_number">Phone:</label>
+            <input id="f_number" type="number" name="phone_number" placeholder="Please enter your Phone Number" required>
+            <br><br>
+            <span class="label-type1" >Gender:</span>
+            <input type="radio" id="f_male"  name="gender" value="male" checked required><label for="f_male" >Male</label>
+            <input type="radio" id="f_female" name="gender" value="female" ><label for="f_female" >Female</label>
+            <br><br>
+            <span class="label-type1" >Interests:</span>
+            <input type="checkbox" id="sports" name="interests" value="sports" checked required><label for="sports" >Sports</label>
+            <input type="checkbox" id="dsa"  name="interests" value="dsa" ><label for="dsa" >DSA</label>
+            <input type="checkbox" name="interests" value="gaming" disabled><label for="gaming">Gaming</label>
+            <input type="checkbox" id="webD"  name="interests" value="webD" ><label for="webD" >Web D</label>
+            <br><br>
+            <p>Address:</p>
+            <textarea placeholder="Text area here" rows="4" cols="20" ></textarea>
+            <br><br>
+            <label class="label-type1" >City:</label>
+            <select name="city">
+                <option value="mb">Mumbai</option>
+                <option value="dl">Delhi</option>
+                <option value="mbd">Moradabad</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+</html>
