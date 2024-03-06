@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="formValidate(event)" action="#">
+        <input onchange="validateName(event)" type="name" name="name" id="name" placeholder="Name"><br><br>
+        <input onchange="validatePhone(event)" type="number" name="number" id="number" placeholder="Phone number"><br><br>
+        <input onchange="validatePassword(event)" type="password" name="password" id="password" placeholder="Password"><br><br>
+        <button type="submit" disabled='true'>Submit</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
