@@ -1,4 +1,4 @@
-counter = 0;
+let counter = 0;
 const increment = ()=>{
     counter++;
     console.log(counter);
