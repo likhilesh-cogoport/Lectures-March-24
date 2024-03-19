@@ -14,7 +14,19 @@ const toursSchema = new mongoose.Schema({
         type: Number,
         default: 4.5,
     },
-    description: String
+    description: String,
+    createdAt: {
+        type: Date,
+        default: Date.now(),
+    },
+    duration:{
+        type: Number,
+        default: 7,
+    },
+    difficulty: {
+        type: String,
+        default: "easy",
+    }
 });
 
 const Tour = mongoose.model('Tour', toursSchema);
