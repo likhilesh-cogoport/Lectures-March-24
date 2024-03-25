@@ -2,7 +2,7 @@ const Tour = require('../models/tourModel');
 
 module.exports.getAllTours = async (req, res) => {
     const { query } = req;
-    const { sort = 'price', fields, page = 1, limit = 2, ...filters } = query;
+    const { sort = 'price', fields, page = 1, limit = 3, ...filters } = query;
 
     try{
         // const tours = await Tour.find(filters);
@@ -22,11 +22,17 @@ module.exports.getAllTours = async (req, res) => {
         const docsToSkip = (page - 1) * limit;
         query = query.skip(docsToSkip).limit(limit);
 
+        //totalPages
+        const totalResults = await Tour.countDocuments();
+        const totalPages = totalResults / limit;
+
         const tours = await query;
         
         res.status(200);
         res.json({
             status: 'success',
+            page: page,
+            totalPages: totalPages,
             result: tours.length,
             body:{
                 tours: tours
