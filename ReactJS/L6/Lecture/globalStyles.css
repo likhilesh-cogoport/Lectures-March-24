@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #131921;
+    border: 1px solid #000;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.amazon-logo{
+    height: 36px;
+    width: 98px;
+
+    background-image: url(https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-2x-reorg-privacy._CB600086755_.png);
+    background-size: 350px;
+    background-position: -10px -45px;
+}
+.logo-container{
+    display: flex;
+}
+.search-container{
+    background-color: aquamarine;
+    border-radius: 4px;
+    width: calc(100vw - 897px);
+    display: flex;
+
+    .search-drop-box{
+        background-color: #E6E6E6;
+        width: 40px;
+        padding-left:5px;
+        font-size: 12px;
+        height: 52px;
+        color: #555555;
+    }
+
+    >input{
+        border: none;
+        outline: none;
+        /* flex: 1; */
+        width: calc(100% - 80px);
+    }
+}
+.location-container{
+    width: 150px;
+}
+.language-container, .user-container, .orders-container, .cart-container{
+    width: 150px;
+} 
+
+.nav-categories{
+    display: flex;
+    background-color: #222F3E;
+    color: #fff;
+    padding: 2px 16px;
+    
+    >a{
+        height: 28px;
+        padding: 4px 9px 0;
+        border: 1px solid #222F3E;
+        border-radius: 4px;
+
+        &:hover{
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.carousal-container{
+    display: flex;
+    width: 100vw;
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+
+     >img{
+        width: 100vw;
+        height: 600px;
+     }
+}
+
+.grid-layout{
+    padding: 20px;
+    background-color: #E3E6E6;
+    display: grid;
+    grid-template-rows: 420px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+
+    .grid-card{
+        background-color: #fff;
+
+        .card-internal-grid{
+            padding: 20px;
+            display: grid;
+            grid-template-rows: repeat(2, 102px);
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 12px;
+            row-gap: 40px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,11 +1,9 @@
 import AmazonLogo from "../amazonLogo";
 
 const NavBar = ({
-    hello,
     searchText,
     setSearchText,
 }) => {
-    console.log('NavBar component re-rendered');
 
     return (
         <div className="navbar">
@@ -21,7 +19,7 @@ const NavBar = ({
                 </div>
                 <input type="text" placeholder="Search Amazon.in" value={searchText}
                     onChange={(e)=>{
-                        setSearchText(e);
+                        setSearchText(e.target.value);
                     }}
                 />
                 <div className="search-drop-box">

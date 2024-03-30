@@ -8,7 +8,6 @@ const parent = document.getElementById("root");
 const root = ReactDOM.createRoot(parent);
 
 const App = () => {
-    console.log('App component re-rendered');
     return <ProductSearch />;
 };
 

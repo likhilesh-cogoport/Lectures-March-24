@@ -24,6 +24,7 @@ const productsData = [
 
 const ProductSearch = () => {
     const [searchText, setSearchText] = useState("");
+    console.log('Product component re-rendered');
     console.log(searchText);
 
     function detectChange(e){
